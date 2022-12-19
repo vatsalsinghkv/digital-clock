@@ -13,37 +13,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: linear-gradient(#000000, var(--GColor), #000000);
   font-family: 'roboto', sans-serif;
   color: var(--PColor);
+  padding: 5%;
+  height: 100vh;
 }
 
 ul {
   list-style: none;
 }
 
-/* CLASSES */
-
-.cc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-}
-
 /* BODY */
 header {
   display: flex;
   justify-content: space-between;
-  width: 80%;
 }
 
 #AM,
@@ -52,14 +40,19 @@ header {
 }
 
 .clock {
-  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 0 auto;
   font-size: 20px;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
+  max-width: 1024px;
 }
 
 .time {
-  width: 80%;
+  display: flex;
+  justify-content: center;
   font-family: 'Radioland';
   font-size: 12rem;
 }
@@ -72,5 +65,14 @@ header {
 .days {
   display: flex;
   justify-content: space-between;
-  width: 80vw;
+}
+
+@media screen and (max-width: 640px) {
+  .time {
+    font-size: 6rem;
+  }
+
+  #sec {
+    font-size: 2.5rem;
+  }
 }
