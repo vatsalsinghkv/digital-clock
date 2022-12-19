@@ -1,72 +1,76 @@
-/* CLASSES */
-
-.cc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
+@font-face {
+  font-family: 'Radioland';
+  src: url('font/RADIOLAND.TTF');
 }
 
 /* GLOBAL */
 :root {
-    --PColor: #00eeff;
-    --SColor: #007399;
-
-    --GColor: #004c66;
+  --PColor: #00eeff;
+  --SColor: #007399;
+  --GColor: #004c66;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: linear-gradient(#000000, var(--GColor), #000000);
-    font-family: 'roboto';
-    color: var(--PColor);
+  background: linear-gradient(#000000, var(--GColor), #000000);
+  font-family: 'roboto', sans-serif;
+  color: var(--PColor);
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+}
+
+/* CLASSES */
+
+.cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
 /* BODY */
 header {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
-#AM, #calander {
-    margin-right: 10px;
+#AM,
+#calander {
+  margin-right: 10px;
 }
 
 .clock {
-    justify-content: space-around;
-    font-size: 20px;
-    width: 100vw;
-    height: 100vh;
+  justify-content: space-around;
+  font-size: 20px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .time {
-    width: 80%;
-    font-family: 'Radioland';
-
-    font-size: 12rem;
+  width: 80%;
+  font-family: 'Radioland';
+  font-size: 12rem;
 }
 
 #sec {
-    font-size: 4rem;
-    margin: auto 0;
+  font-size: 4rem;
+  margin: auto 0;
 }
 
 .days {
-    display: flex;
-    justify-content: space-between;
-    width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
 }
